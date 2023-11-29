@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bg{
+        background-color: rgb(181, 211, 211);
+      }
+        .main{
+            border: 1px solid;
+            width: 800px;
+            height: 800px;
+            padding: 30px;
+        }
+        .child{
+            border: 1px solid;
+           padding: 10px;
+          background-color: rgb(157, 117, 151);
+          color: aliceblue;
+          border-radius: 10px;
+          
+          
+        
+        }
+       
+        .box{
+            border: 2px solid;
+            width: 200px;
+            height: 100px;
+            background-color:orange;
+            margin-left: 350px;
+            text-align: center;
+            padding-top:30px;
+            color: aliceblue;
+        }
+        
+        input[ value="none"]:checked~.box{
+            transform: none;
+        }
+      input[value="skew"]:checked~.box{
+        transform: skew(40deg);
+      }
+      input[value="skewx"]:checked~.box{
+        transform: skew(120deg);
+      }
+      input[value="skewY"]:checked~.box{
+        transform: skewY(160deg);
+      }
+      input[value="scaleY"]:checked~.box{
+        transform:scaleY(2.5);
+      }
+      input[value="rotate"]:checked~.box{
+        transform: rotate(120deg);
+      }
+      input[value="rotateX"]:checked~.box{
+        transform: rotateX(200deg);
+      }
+      input[value="scaleX"]:checked~.box{
+        transform: scaleX(2.0);
+      }
+      input[value="rotateY"]:checked~.box{
+        transform: rotate(100deg);
+      }
+    
+
+    
+
+       
+    </style>
+</head>
+<body class="bg">
+
+
+  <div class="main">
+   
+ 
+<input type="radio" value="none" name="transform"/><span class="child">transform: none</span><br><br><br>
+<input type="radio" value="skew" name="transform"/><span class="child">transform: skew</span><br><br><br>
+<input type="radio" value="skewx" name="transform"/><span class="child">transform:skewX</span><br><br><br>
+<input type="radio" value="skewY" name="transform"/><span class="child">transform:skewY</span><br><br><br>
+<input type="radio" value="scaleY" name="transform"/><span class="child">transform:skaleY</span><br><br><br>
+<input type="radio" value="rotate" name="transform"/><span class="child">transform:rotate</span><br><br><br>
+<input type="radio" value="rotateX" name="transform"/><span class="child">transform:rotateX</span><br><br><br>
+<input type="radio" value="scaleX" name="transform"/><span class="child">transform:scaleX</span><br><br><br>
+<input type="radio" value="rotateY" name="transform"/><span class="child">transform:rotateY</span><br><br><br>
+
+
+<div class="box">hello!</div>
+
+
+</div>
+</body>
+</html>
